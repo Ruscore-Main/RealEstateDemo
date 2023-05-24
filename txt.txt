@@ -1,0 +1,24 @@
+ public string FullAddress
+        {
+           get
+            {
+                string fullAddress = "";
+                if (AddressCity != "")
+                {
+                    fullAddress += $"г. {AddressCity} ";
+                }
+                if (AddressStreet != "")
+                {
+                    fullAddress += $"ул. {AddressStreet} ";
+                }
+                if (AddressHouse != null)
+                {
+                    fullAddress += $"д. {AddressHouse} ";
+                }
+                if (AddressNumber != null)
+                {
+                    fullAddress += $"кв. {AddressHouse}";
+                }
+                return fullAddress;
+            }
+        }

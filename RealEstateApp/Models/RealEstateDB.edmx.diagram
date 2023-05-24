@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c1a7a9a304844b558ec9c07c409fb3f9" Name="Diagram1" ZoomLevel="73">
+        <EntityTypeShape EntityType="RealEstateDBModel.Agent" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RealEstateDBModel.Client" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="RealEstateDBModel.Deal" Width="1.5" PointX="8.25" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RealEstateDBModel.Demand" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RealEstateDBModel.RealEstate" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RealEstateDBModel.Supply" Width="1.5" PointX="6" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="RealEstateDBModel.TypeRealEstate" Width="1.5" PointX="0.75" PointY="10.25" IsExpanded="true" />
+        <AssociationConnector Association="RealEstateDBModel.FK_Demand_Agent" ManuallyRouted="false" />
+        <AssociationConnector Association="RealEstateDBModel.FK_Supply_Agent" ManuallyRouted="false" />
+        <AssociationConnector Association="RealEstateDBModel.FK_Demand_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="RealEstateDBModel.FK_Supply_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="RealEstateDBModel.FK_Deal_Demand" ManuallyRouted="false" />
+        <AssociationConnector Association="RealEstateDBModel.FK_Deal_Supply" ManuallyRouted="false" />
+        <AssociationConnector Association="RealEstateDBModel.FK_Demand_TypeRealEstate" ManuallyRouted="false" />
+        <AssociationConnector Association="RealEstateDBModel.FK_Supply_RealEstate" ManuallyRouted="false" />
+        <AssociationConnector Association="RealEstateDBModel.FK_RealEstate_TypeRealEstate" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
