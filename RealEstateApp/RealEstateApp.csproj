@@ -103,6 +103,9 @@
     <Compile Include="Windows\AddClient.xaml.cs">
       <DependentUpon>AddClient.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\AddRealEstateWindow.xaml.cs">
+      <DependentUpon>AddRealEstateWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\AgentClientWindow.xaml.cs">
       <DependentUpon>AgentClientWindow.xaml</DependentUpon>
     </Compile>
@@ -125,6 +128,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Windows\AddClient.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\AddRealEstateWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

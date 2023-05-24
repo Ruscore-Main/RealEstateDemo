@@ -215,5 +215,10 @@ namespace RealEstateApp.Windows
             this.Hide();
             addClientWindow.Show();
         }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

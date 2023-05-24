@@ -26,8 +26,8 @@ namespace RealEstateApp.Models
         public int TypeRealEstateId { get; set; }
         public string AddressCity { get; set; }
         public string AddressStreet { get; set; }
-        public Nullable<int> AddressHouse { get; set; }
-        public Nullable<int> AddresNumber { get; set; }
+        public string AddressHouse { get; set; }
+        public string AddresNumber { get; set; }
         public Nullable<int> MinPrice { get; set; }
         public Nullable<int> MaxPrice { get; set; }
         public Nullable<int> MinArea { get; set; }

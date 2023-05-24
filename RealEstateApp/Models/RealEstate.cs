@@ -26,38 +26,12 @@ namespace RealEstateApp.Models
         public Nullable<int> Floor { get; set; }
         public string AddressCity { get; set; }
         public string AddressStreet { get; set; }
-        public Nullable<int> AddressHouse { get; set; }
-        public Nullable<int> AddressNumber { get; set; }
+        public string AddressHouse { get; set; }
+        public string AddressNumber { get; set; }
         public Nullable<double> Latitude { get; set; }
         public Nullable<double> Longitude { get; set; }
         public int TypeRealEstateId { get; set; }
-        
-
-        public string FullAddress
-        {
-           get
-            {
-                string fullAddress = "";
-                if (AddressCity != "")
-                {
-                    fullAddress += $"г. {AddressCity} ";
-                }
-                if (AddressStreet != "")
-                {
-                    fullAddress += $"ул. {AddressStreet} ";
-                }
-                if (AddressHouse != null)
-                {
-                    fullAddress += $"д. {AddressHouse} ";
-                }
-                if (AddressNumber != null)
-                {
-                    fullAddress += $"кв. {AddressHouse}";
-                }
-                return fullAddress;
-            }
-        }
-
+    
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Supply> Supply { get; set; }
         public virtual TypeRealEstate TypeRealEstate { get; set; }

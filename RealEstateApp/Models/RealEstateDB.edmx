@@ -44,8 +44,8 @@
           <Property Name="TypeRealEstateId" Type="int" Nullable="false" />
           <Property Name="AddressCity" Type="nvarchar(max)" />
           <Property Name="AddressStreet" Type="nvarchar(max)" />
-          <Property Name="AddressHouse" Type="int" />
-          <Property Name="AddresNumber" Type="int" />
+          <Property Name="AddressHouse" Type="nvarchar(max)" />
+          <Property Name="AddresNumber" Type="nvarchar(max)" />
           <Property Name="MinPrice" Type="int" />
           <Property Name="MaxPrice" Type="int" />
           <Property Name="MinArea" Type="int" />
@@ -65,8 +65,8 @@
           <Property Name="Floor" Type="int" />
           <Property Name="AddressCity" Type="nvarchar(max)" />
           <Property Name="AddressStreet" Type="nvarchar(max)" />
-          <Property Name="AddressHouse" Type="int" />
-          <Property Name="AddressNumber" Type="int" />
+          <Property Name="AddressHouse" Type="nvarchar(max)" />
+          <Property Name="AddressNumber" Type="nvarchar(max)" />
           <Property Name="Latitude" Type="float" />
           <Property Name="Longitude" Type="float" />
           <Property Name="TypeRealEstateId" Type="int" Nullable="false" />
@@ -304,8 +304,8 @@
           <Property Name="TypeRealEstateId" Type="Int32" Nullable="false" />
           <Property Name="AddressCity" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="AddressStreet" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="AddressHouse" Type="Int32" />
-          <Property Name="AddresNumber" Type="Int32" />
+          <Property Name="AddressHouse" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="AddresNumber" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
           <Property Name="MinPrice" Type="Int32" />
           <Property Name="MaxPrice" Type="Int32" />
           <Property Name="MinArea" Type="Int32" />
@@ -329,8 +329,8 @@
           <Property Name="Floor" Type="Int32" />
           <Property Name="AddressCity" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="AddressStreet" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="AddressHouse" Type="Int32" />
-          <Property Name="AddressNumber" Type="Int32" />
+          <Property Name="AddressHouse" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="AddressNumber" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
           <Property Name="Latitude" Type="Double" />
           <Property Name="Longitude" Type="Double" />
           <Property Name="TypeRealEstateId" Type="Int32" Nullable="false" />

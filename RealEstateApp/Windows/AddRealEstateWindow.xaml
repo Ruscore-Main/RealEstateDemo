@@ -1,0 +1,63 @@
+﻿<Window x:Class="RealEstateApp.Windows.AddRealEstateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RealEstateApp.Windows" xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="AddRealEstateWindow" Height="450" Width="400" MinWidth="400" MaxWidth="1000" MinHeight="450" MaxHeight="1000" WindowStartupLocation="CenterScreen" Closing="Window_Closing">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">Город:</Label>
+        <Label Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">Улица:</Label>
+        <Label Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">Номер дома:</Label>
+        <Label Grid.Row="3" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">Номер квартиры:</Label>
+        <Label Grid.Row="4" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">Широта:</Label>
+        <Label Grid.Row="5" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">Долгота:</Label>
+        <Label Grid.Row="6" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">Тип недвижимости:</Label>
+        <Label Grid.Row="7" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" x:Name="LblArea">Площадь:</Label>
+        <Label Grid.Row="8" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" x:Name="LblRooms">Количество комнат:</Label>
+        <Label Grid.Row="9" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" x:Name="LblFloor">Этаж:</Label>
+
+        <TextBox Grid.Row="0" Grid.Column="1" Height="25" x:Name="TxtCity"></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="1" Height="25" x:Name="TxtStreet"></TextBox>
+        <TextBox Grid.Row="2" Grid.Column="1" Height="25" x:Name="TxtHouse"></TextBox>
+        <TextBox Grid.Row="3" Grid.Column="1" Height="25" x:Name="TxtAppartment"></TextBox>
+        <TextBox Grid.Row="4" Grid.Column="1" Height="25" x:Name="TxtLatitude"></TextBox>
+        <TextBox Grid.Row="5" Grid.Column="1" Height="25" x:Name="TxtLongitude"></TextBox>
+        <ComboBox Grid.Row="6" Grid.Column="1" Height="25" SelectedIndex="0" x:Name="CmbType" SelectionChanged="CmbType_SelectionChanged" SelectedValuePath="Content">
+            <ComboBoxItem >
+                Квартира
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Дом
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Земля
+            </ComboBoxItem>
+        </ComboBox>
+        
+        <TextBox Grid.Row="7" Grid.Column="1" Height="25" x:Name="TxtArea"></TextBox>
+        <TextBox Grid.Row="8" Grid.Column="1" Height="25" Name="TxtRooms"></TextBox>
+        <TextBox Grid.Row="9" Grid.Column="1" Height="25" x:Name="TxtFloor"></TextBox>
+
+        <Button Grid.Row="10" Grid.ColumnSpan="2" Click="Button_Click">Добавить</Button>
+    </Grid>
+</Window>

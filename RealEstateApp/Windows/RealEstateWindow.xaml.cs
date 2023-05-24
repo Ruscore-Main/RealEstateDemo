@@ -63,7 +63,9 @@ namespace RealEstateApp.Windows
         // Добавление недвижимости
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            AddRealEstateWindow addRealEstateWindow = new AddRealEstateWindow(this, _db);
+            addRealEstateWindow.Show();
+            this.Hide();
         }
 
         // Изменение недвижинмости
@@ -75,7 +77,19 @@ namespace RealEstateApp.Windows
         // Удаление недвижимости
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
+            RealEstate realEstate = RealEstateTable.SelectedItem as RealEstate;
 
+            if (realEstate.Supply.Count > 0)
+            {
+                MessageBox.Show("Нельзя удалить недвижимость, связаную с предложением", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            else
+            {
+                _db.RealEstate.Remove(realEstate);
+                _db.SaveChanges();
+                UpdateTable();
+                MessageBox.Show("Недвижимость успешно удалена!");
+            }
         }
 
         // Изменение выбранного типа
